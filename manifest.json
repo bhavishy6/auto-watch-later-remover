@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Auto Watch Later Remover",
+    "version": "1",
+
+     // Recommended
+    "description": "Automatically removes a video from your watch later playlist after you are done with it",
+
+    "content_scripts": [
+        {
+            "matches": ["http://www.youtube.com/*"],
+            "js": [ "main.js"]
+        }
+    ],
+
+    "permissions": [
+        "tabs", "http://www.youtube.com/*"
+    ]
+
+}
